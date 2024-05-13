@@ -16,3 +16,55 @@ p.verde{
 #cabecalho{
     border: 1px solid blue;
 }
+/* Seletor de filho */
+/* Seleciona um elemento que é flho de outro */
+/* li>a{} */ 
+/* Exemplo: 
+Seleciona quaisuqer elementos <a>
+que são filhos de um elemento <li>
+(mas não outros elementos a na página) 
+É muito usado quando esta trabalhando com menu
+*/
+li>a{
+    color: red;
+    text-decoration: none;
+}
+/* Seletor de descendente
+p a {
+}  ==> resumo Links que estejam dentro de um parágrafo.
+Seleciona um elemento que é descendente de outro elemento especifico (e não apenas filho direto desse elemento)
+Seleciona quaisquer elementos <a> que residem dentro de um elemento <p>, mesmo se houver outros elementos aninhados entre eles.
+Resumo:
+É um link ou elemento que esta dentro de outro elemento mesmo que não seja descendente direto ou filho direto mas que esteja dentro do elemento pai
+*/
+
+div a{
+    color: green;
+}
+
+/* Seletor de irmãos adjacente
+h1+p{
+}    ---> 
+Seleciona um elemento que é o irmão próximo de outro
+h1+p{} => Seleciona o primeiro elemento <p> depois de qualquer elemento<h1>(mas não outros elementos <p>)
+Resumo: 
+Coloca a formatação no irmão posteiror ao elemento <h1>
+*/
+
+h1+p{
+    color:red;
+}
+
+/* Seletor de irmão geral
+h1~p{
+}
+Seleciona um elemento que é o irmão próximo de outro
+Seleciona o primeiro elemento <p>
+depois de qualquer elemento <h1>
+(mas não outros elementos <p>).
+Resumo:
+
+*/
+h1~p{
+    color:gold;
+}
