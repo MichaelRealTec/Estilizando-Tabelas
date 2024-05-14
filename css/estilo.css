@@ -1,15 +1,23 @@
 /* Herança e especificidade */
 
-#pagina p{
-    color: red !important;
-    /* Define o quão importante é uma propriedade no estilo */
+*{
+    color: red;
 }
-#pagina p{
-    color: blue;
+h2{
+        color: blue;
 }
-/* No caso de dois seletores iguais o último vai ser aplicado */
+h2#amarelo{
+    color:yellow;
+}
+h2.verde{
+    color:green;
+}
 
-
+/* Ordem de especificidade 
+id = #
+class = .
+h2 = 
+*/
 
 
 
