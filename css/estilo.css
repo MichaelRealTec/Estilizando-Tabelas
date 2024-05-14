@@ -1,12 +1,29 @@
-/* Cria um seletor universal */
+/* Herança e especificidade */
+
+#pagina p{
+    color: red !important;
+    /* Define o quão importante é uma propriedade no estilo */
+}
+#pagina p{
+    color: blue;
+}
+/* No caso de dois seletores iguais o último vai ser aplicado */
+
+
+
+
+
+
+
+/* Cria um seletor universal 
 *{
     border: 1px solid red;
 }
-/* Seletor de texto */
+/* Seletor de texto 
 h1 {
     color: green;
 }
-/* Seletor de Classe */
+/* Seletor de Classe 
 .verde{
     color: green;
 }
@@ -24,7 +41,7 @@ Seleciona quaisuqer elementos <a>
 que são filhos de um elemento <li>
 (mas não outros elementos a na página) 
 É muito usado quando esta trabalhando com menu
-*/
+
 li>a{
     color: red;
     text-decoration: none;
@@ -36,7 +53,7 @@ Seleciona um elemento que é descendente de outro elemento especifico (e não ap
 Seleciona quaisquer elementos <a> que residem dentro de um elemento <p>, mesmo se houver outros elementos aninhados entre eles.
 Resumo:
 É um link ou elemento que esta dentro de outro elemento mesmo que não seja descendente direto ou filho direto mas que esteja dentro do elemento pai
-*/
+
 
 div a{
     color: green;
@@ -49,7 +66,7 @@ Seleciona um elemento que é o irmão próximo de outro
 h1+p{} => Seleciona o primeiro elemento <p> depois de qualquer elemento<h1>(mas não outros elementos <p>)
 Resumo: 
 Coloca a formatação no irmão posteiror ao elemento <h1>
-*/
+
 
 h1+p{
     color:red;
@@ -64,7 +81,10 @@ depois de qualquer elemento <h1>
 (mas não outros elementos <p>).
 Resumo:
 
-*/
+
 h1~p{
     color:gold;
 }
+
+
+*/
